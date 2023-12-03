@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    @apply my-2;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* For Webkit browsers like Chrome/Safari */
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: scroll;
+}
